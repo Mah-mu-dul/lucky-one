@@ -21,11 +21,18 @@ const Shop = () => {
     const [Card, setCard] = useState([])
     
     const addToCart=Product =>{
-
-        const newCart  = []
-        newCart = [...Card,Product]
+        const newCart = [...Card,Product]
         setCard(newCart)
-        console.log(newCart);
+        
+    }
+    const gRandom =(Card ) =>{
+        console.log(Card);
+        return Math.floor(Math.random()*Card.length)
+    }
+    const random = (Card) =>{
+        const r  = gRandom(Card)
+        console.log(r);
+
     }
     
     return (
@@ -37,6 +44,14 @@ const Shop = () => {
             </div>
             <div className="cart-container">
                 <h1>this is cart sectoin</h1>
+                {
+                    Card.map( shoe =><h1 key={shoe.id}>{shoe.name}</h1>)
+                }
+                <div className="">
+                    
+                </div>
+                <button onClick={() => random(Card)}>choose one for me </button>
+                <button >choose again </button>
                 
             </div>
         </div>
