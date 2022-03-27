@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Mayeer Dooa Juta Store
+This project was bootstrapped with [Live site](https://mayeer-dooa-jota-store-by-mahmudul.netlify.app/).
 
 ## Available Scripts
 
