@@ -7,3 +7,17 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
+.btn{
+
+}
+
+@media screen and (max-width:600px){
+
+    .card-container{
+    grid-template-columns: repeat(1,1fr);
+
+}
+.shop-container{
+    grid-template-columns: repeat(1,1fr);
+}
+}

@@ -1,5 +1,5 @@
 .img{
-    width: 200px;
+    width: 300px;
 }
 .card{
     background-color: powderblue;
@@ -18,7 +18,7 @@
     border-radius: 10px;
     font-size: 20px;
     color: white;
-    
+    margin: 5px;
 }
 .details{
     display: flex;

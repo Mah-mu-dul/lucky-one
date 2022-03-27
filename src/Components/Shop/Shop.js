@@ -56,8 +56,8 @@ const Shop = () => {
                     Card.map(shoe => <h1 key={shoe.id}>{shoe.name}</h1>)
                 }
 
-                <button onClick={() => random(Card)}>choose one for me </button>
-                <button  onClick={() =>reset()}>choose again </button>
+                <button className='btn' onClick={() => random(Card)}>choose one for me </button>
+                <button className='btn'  onClick={() =>reset()}>choose again </button>
                 <h1 id='choose'> </h1>
 
             </div>
