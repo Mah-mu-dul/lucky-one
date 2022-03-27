@@ -1,0 +1,27 @@
+.img{
+    width: 200px;
+}
+.card{
+    background-color: powderblue;
+    border: 2px solid blanchedalmond;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+.btn{
+    background-color: rgb(238, 180, 54);
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
