@@ -10,6 +10,19 @@
 .btn{
 
 }
+.optional{
+    background-color: rgba(0, 255, 255, 0.075);
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+        border-radius: 5px;
+
+}
+.details-op{
+    background-color: rgba(247, 169, 54, 0.438);
+    padding: 10px;
+    border-radius: 5px;
+}
 
 @media screen and (max-width:600px){
 

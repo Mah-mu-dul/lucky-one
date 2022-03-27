@@ -47,22 +47,36 @@ const Shop = () => {
     }
 
     return (
-        <div className="shop-container">
-            <div className='card-container'>
-                {
-                    Products.map(product => <Shoe key={product.id} product={product} addToCart={addToCart}></Shoe>)
-                }
+        <div className="">
+            <div className="shop-container">
+                <div className='card-container'>
+                    {
+                        Products.map(product => <Shoe key={product.id} product={product} addToCart={addToCart}></Shoe>)
+                    }
+                </div>
+                <div className="cart-container">
+                    <h1>This is cart sectoin  </h1>
+                    {
+                        Card.map(shoe => <h1 key={shoe.id}>{shoe.name}</h1>)
+                    }
+
+                    <button className='btn' onClick={() => random(Card)}>pick  one for me  </button>
+                    <button className='btn' onClick={() => reset()}>choose again </button>
+                    <h1 id='choose'> </h1>
+
+                </div>
             </div>
-            <div className="cart-container">
-                <h1>This is cart sectoin  </h1>
-                {
-                    Card.map(shoe => <h1 key={shoe.id}>{shoe.name}</h1>)
-                }
+            <div className="optional">
+                <div className="details-op">
+                    <h1>How react works?</h1>
+                    <p>React is a js library which works via declarative code.First in the react we make Component by jsx.And what declarative code does is it connects those Components with app(js).Which is the final result we see in the ui.</p>
 
-                <button className='btn' onClick={() => random(Card)}>pick  one for me  </button>
-                <button className='btn' onClick={() => reset()}>choose again </button>
-                <h1 id='choose'> </h1>
+                </div>
+                <div className="details-op">
+                    <h2>Props vs UseState</h2>
+                    <p>Props is short from of property which we use to send data via declarative code and function.which means we can use data of a Component from another. Whereas useState is react hook that we use to set a initial value of a item and also a function that can set or change value of the initial value.And also we cant use a useState of a Component to another it has to be specific only to that component</p>
 
+                </div>
             </div>
         </div>
     );
