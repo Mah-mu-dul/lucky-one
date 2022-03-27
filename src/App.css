@@ -9,6 +9,11 @@ body{
   height: 40vmin;
   pointer-events: none;
 }
+#mainHead{
+  color: rgb(218, 32, 172);
+  text-align: center;
+  font-size: 50px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

@@ -3,6 +3,9 @@ import Shoe from '../Shoe/Shoe';
 import "./Shop.css"
 import { useState } from 'react'
 
+
+
+
 const Shop = () => {
     const Products = [
         { id: 1, name: 'Red Nikey', price: 90, img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80' },
@@ -36,7 +39,7 @@ const Shop = () => {
 
 
     }
-    const reset = () =>{
+    const reset = () => {
         setCard([])
         document.getElementById('choose').innerText = ''
 
@@ -51,13 +54,13 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <h1>this is cart sectoin</h1>
+                <h1>This is cart sectoin  </h1>
                 {
                     Card.map(shoe => <h1 key={shoe.id}>{shoe.name}</h1>)
                 }
 
-                <button className='btn' onClick={() => random(Card)}>choose one for me </button>
-                <button className='btn'  onClick={() =>reset()}>choose again </button>
+                <button className='btn' onClick={() => random(Card)}>pick  one for me  </button>
+                <button className='btn' onClick={() => reset()}>choose again </button>
                 <h1 id='choose'> </h1>
 
             </div>

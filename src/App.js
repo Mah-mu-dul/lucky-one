@@ -5,7 +5,7 @@ function App() {
   return (
     
     <div >
-      <h1>Mayeer Dooa Juta Store</h1>
+      <h1 id='mainHead'>Mayeer Dooa Juta Store</h1>
       
       <Shop></Shop>
     </div>

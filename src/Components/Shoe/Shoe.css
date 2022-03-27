@@ -9,6 +9,11 @@
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    
+
+
+
+justify-content: space-between
 
 }
 .btn{
@@ -19,6 +24,10 @@
     font-size: 20px;
     color: white;
     margin: 5px;
+}
+.btn:hover{
+    background-color: rgba(232, 135, 241, 0.671);
+    color: rgb(247, 238, 225);
 }
 .details{
     display: flex;
